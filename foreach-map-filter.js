@@ -43,7 +43,9 @@ Examples:
 
 */
 function showFirstAndLast(arr){
-    
+    return arr.map(function(word) {
+        return word.at(0) + word.at(word.length-1);
+    });
 }
 
 /*
