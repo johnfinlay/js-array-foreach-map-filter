@@ -179,7 +179,11 @@ Examples:
         , last:"Steele", isCatOwner: true}]
 */
 
-function filterByValue(arr, key) {}
+function filterByValue(arr, key) {
+    return arr.filter(function(obj) {
+        return obj[key];
+    });
+}
 
 /*
 Write a function called find which accepts an array and a value and 
