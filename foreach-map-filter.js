@@ -84,7 +84,18 @@ Examples:
         , o: 3, u: 1};
 */
 function vowelCount(str){
-   
+   let count = {};
+   let vowels = ['a','e','i','o','u'];
+   str.split('').forEach(function(letter) {
+    if (vowels.includes(letter.toLowerCase())) {
+        if (count[letter.toLowerCase()]) {
+            count[letter.toLowerCase()]++;
+        } else {
+            count[letter.toLowerCase()] = 1;
+        }
+    }
+   });
+   return count;
 }
 
 /*
