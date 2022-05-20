@@ -214,7 +214,11 @@ Examples:
     // {first: 'Tim', last:"Garcia", isCatOwner: true}
 */
 
-function findInObj(arr, key, searchValue) {}
+function findInObj(arr, key, searchValue) {
+    return arr.filter(function(obj) {
+        return obj[key] === searchValue;
+    })[0];
+}
 
 /*
 Write a function called removeVowels which accepts a string and 
