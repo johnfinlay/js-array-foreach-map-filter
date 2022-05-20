@@ -63,7 +63,10 @@ Examples:
 
 */
 function addKeyAndValue(arr,key,value){
-    
+    arr.forEach(function(obj, idx, arr) {
+        obj[key] = value;
+    });
+    return arr;
 }
 
 /*
