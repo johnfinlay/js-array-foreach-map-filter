@@ -125,7 +125,9 @@ Examples:
 */
 
 function valTimesIndex(arr){
-    
+    return arr.map(function(num, idx) {
+        return num * idx;
+    });
 }
 
 /*
