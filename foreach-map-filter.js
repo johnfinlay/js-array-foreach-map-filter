@@ -232,7 +232,14 @@ Examples:
     removeVowels('ZZZZZZ') // ('zzzzzz')
 */
 
-function removeVowels(str) {}
+function removeVowels(str) {
+    const vowels = ['a','e','i','o','u'];
+    return str.split('').filter(function(letter) {
+        return !vowels.includes(letter.toLowerCase())
+    }).map(function(letter) {
+        return letter.toLowerCase();
+    }).join('');
+}
 
 /*
 Write a function called doubleOddNumbers which accepts an array and 
