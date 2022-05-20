@@ -160,7 +160,9 @@ Examples:
 */
 
 function extractFullName(arr){
-    
+    return arr.map(function(obj) {
+        return `${obj.first} ${obj.last}`;
+    });
 }
 
 /*
